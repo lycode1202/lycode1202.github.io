@@ -68,7 +68,7 @@
     <a href="" class="waves-effect waves-light">
 
       
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      <i class="fas fa-chart-line" style="zoom: 0.6;"></i>
       
       <span>统计</span>
       <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
@@ -80,7 +80,7 @@
           
           <i class="fas fa-tags" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Tags</span>
+          <span>标签</span>
         </a>
       </li>
       
@@ -89,7 +89,7 @@
           
           <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Categories</span>
+          <span>分类</span>
         </a>
       </li>
       
@@ -98,7 +98,7 @@
           
           <i class="fas fa-archive" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Archives</span>
+          <span>归档</span>
         </a>
       </li>
       
@@ -123,7 +123,7 @@
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Musics</span>
+          <span>音乐</span>
         </a>
       </li>
       
@@ -132,7 +132,7 @@
           
           <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Movies</span>
+          <span>电影</span>
         </a>
       </li>
       
@@ -141,7 +141,7 @@
           
           <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Books</span>
+          <span>书籍</span>
         </a>
       </li>
       
@@ -150,7 +150,7 @@
           
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>Galleries</span>
+          <span>相册</span>
         </a>
       </li>
       
@@ -230,7 +230,7 @@
 	  
 		<a href="javascript:;">
 			
-				<i class="fa-fw fas fa-home"></i>
+				<i class="fa-fw fas fa-chart-line"></i>
 			
 			统计
 			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
@@ -243,7 +243,7 @@
 				  
 				   <i class="fa fas fa-tags" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Tags</span>
+		          <span>标签</span>
                   </a>
                 </li>
               
@@ -253,7 +253,7 @@
 				  
 				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Categories</span>
+		          <span>分类</span>
                   </a>
                 </li>
               
@@ -263,7 +263,7 @@
 				  
 				   <i class="fa fas fa-archive" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Archives</span>
+		          <span>归档</span>
                   </a>
                 </li>
               
@@ -288,7 +288,7 @@
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Musics</span>
+		          <span>音乐</span>
                   </a>
                 </li>
               
@@ -298,7 +298,7 @@
 				  
 				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Movies</span>
+		          <span>电影</span>
                   </a>
                 </li>
               
@@ -308,7 +308,7 @@
 				  
 				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Books</span>
+		          <span>书籍</span>
                   </a>
                 </li>
               
@@ -318,7 +318,7 @@
 				  
 				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
 			      
-		          <span>Galleries</span>
+		          <span>相册</span>
                   </a>
                 </li>
               
@@ -436,13 +436,18 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">3</a></span>
+    <span class="count"><a href="/">5</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 
+
+<div class="statis">
+    <span class="count"><a href="/tags">2</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                     </div>
@@ -456,13 +461,18 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">3</a></span>
+    <span class="count"><a href="/">5</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 
+
+<div class="statis">
+    <span class="count"><a href="/tags">2</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                                 </div>
@@ -632,7 +642,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,3],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,5],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -698,7 +708,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: []
+                data: ["SpringBoot","hexo"]
             }
         ],
         yAxis: [
@@ -711,7 +721,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [],
+                data: [3,2],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -880,6 +890,18 @@
         <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;其他技能</div>
         <div class="tag-chips center-align">
             
+            
+            <a href="/tags/SpringBoot/">
+                <span class="chip center-align waves-effect waves-light chip-default">SpringBoot</span>
+            </a>
+            
+            
+            
+            <a href="/tags/hexo/">
+                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
+            </a>
+            
+            
         </div>
     </div>
     
@@ -956,7 +978,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">279</span>
+                        class="white-color">10.7k</span>
             
             
             
