@@ -4,11 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo-matery博客目录结构, python,mysql,java,springboot,hexo,HTML,CSS等">
-    <meta name="description" content="目录部分
-deploy_git，与git是git相关内容，如果无法git到仓库，需要检查git文件夹中配置
-scaffolds，存放的是默认生成md文件的配置，其中post.md是默认生成文章的配置
-scripts，扩展脚本目录，这里可以自">
+    <meta name="keywords" content="hexo博客美化, python,mysql,java,springboot,hexo,HTML,CSS等">
+    <meta name="description" content="首先声明一下，一定要分清什么是站点配置文件，什么是主题文件，比如我在 F 盘新建我的博客文件夹，名称为 blog，那么站点配置文件的路径为 F:/blog/_config.yml，而你的主题配置文件路径为 F:/blog/themes/ma">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +17,7 @@ scripts，扩展脚本目录，这里可以自">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo-matery博客目录结构 | 寜笙的博客</title>
+    <title>hexo博客美化 | 寜笙的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -384,12 +381,12 @@ scripts，扩展脚本目录，这里可以自">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo-matery博客目录结构</h1>
+                    <h1 class="description center-align post-title">hexo博客美化</h1>
                 </div>
             </div>
         </div>
@@ -535,14 +532,14 @@ scripts，扩展脚本目录，这里可以自">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    850
+                    2.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    13 分
                 </div>
                 
 
@@ -562,105 +559,277 @@ scripts，扩展脚本目录，这里可以自">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="目录部分"><a href="#目录部分" class="headerlink" title="目录部分"></a>目录部分</h4><ul>
-<li><code>deploy_git</code>，与<code>git</code>是<strong>git</strong>相关内容，如果无法git到仓库，需要检查git文件夹中配置</li>
-<li><code>scaffolds</code>，存放的是默认生成md文件的配置，其中<code>post.md</code>是默认生成文章的配置</li>
-<li><code>scripts</code>，扩展脚本目录，这里可以自定义一些javascript脚本存放的是页面加载脚本(非默认)</li>
-<li><strong><code>source</code>，hexo源码目录，是核心目录，下面详解</strong></li>
-<li><strong><code>themes</code>，是主题目录，下面详解</strong></li>
-<li><code>packages，</code>是存放看板动画模型的(非默认)</li>
-<li><code>public，</code>是通过hexo g编译出来的最终网页文件，也是部署到github上的文件，输出的静态网页内容目录</li>
-<li><code>node_modules</code>，是hexo的一些库文件</li>
-</ul>
-<h4 id="文件部分"><a href="#文件部分" class="headerlink" title="文件部分"></a>文件部分</h4><ul>
-<li><strong><code>_config.yml</code>，是hexo的全局配置文件(核心配置文件)，一些插件安装后都需在此文件开启</strong></li>
-<li><code>CNAME</code>，可配置个人域名</li>
-<li><code>package.json</code>，应用程序数据，指明hexo的版本等信息，类似于一般软件中的关于按钮</li>
-<li><code>main.py</code>，个人快速执行脚本(非默认)</li>
-</ul>
-<h3 id="source目录"><a href="#source目录" class="headerlink" title="source目录"></a>source目录</h3><p><strong>hexo的源码目录，写文章的主要目录</strong></p>
-<pre class="line-numbers language-yaml"><code class="language-yaml">├── _data              <span class="token comment" spellcheck="true"># 存放友链的friends.json和相册的json</span>
-├── _posts             <span class="token comment" spellcheck="true"># 所有文章就在这里</span>
-├── 404                <span class="token comment" spellcheck="true"># 404相关</span>
-├── categories         <span class="token comment" spellcheck="true"># 归档页面</span>
-├── contact            <span class="token comment" spellcheck="true"># 关于页面</span>
-├── friends            <span class="token comment" spellcheck="true"># 友联页面</span>
-├── galleries          <span class="token comment" spellcheck="true"># 相册页面</span>
-├── images             <span class="token comment" spellcheck="true"># 图片页面，其他图，懒加载图存放位置</span>
-├── media              <span class="token comment" spellcheck="true"># 多媒体</span>
-├── tags               <span class="token comment" spellcheck="true"># 标签页</span>
-├── 404.md             <span class="token comment" spellcheck="true"># 404崩溃页面</span>
-└── CANME
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="themes目录"><a href="#themes目录" class="headerlink" title="themes目录"></a>themes目录</h3><blockquote>
-<p>hexo-theme-matery主题为例，**<code>_config.yml</code>是主题配置文件，非常重要**</p>
-</blockquote>
-<pre class="line-numbers language-yaml"><code class="language-yaml">├── languages          <span class="token comment" spellcheck="true"># 多语言</span>
-<span class="token punctuation">|</span>   ├── default.yml    <span class="token comment" spellcheck="true"># 默认语言</span>
-<span class="token punctuation">|</span>   └── zh<span class="token punctuation">-</span>CN.yml      <span class="token comment" spellcheck="true"># 中文语言</span>
-├── layout             <span class="token comment" spellcheck="true"># 布局，根目录下的*.ejs文件是对主页，分页，存档等的控制</span>
-<span class="token punctuation">|</span>   ├── _partial       <span class="token comment" spellcheck="true"># 局部的布局，此目录下的*.ejs是对头尾等局部的控制</span>
-<span class="token punctuation">|</span>   └── _widget        <span class="token comment" spellcheck="true"># 小挂件的布局，页面下方小挂件的控制</span>
-├── source             <span class="token comment" spellcheck="true"># 源码</span>
-<span class="token punctuation">|</span>   ├── css            <span class="token comment" spellcheck="true"># css源码 </span>
-<span class="token punctuation">|</span>   <span class="token punctuation">|</span>   ├── _base      <span class="token comment" spellcheck="true"># *.styl基础css</span>
-<span class="token punctuation">|</span>   <span class="token punctuation">|</span>   ├── _partial   <span class="token comment" spellcheck="true"># *.styl局部css</span>
-<span class="token punctuation">|</span>   <span class="token punctuation">|</span>   ├── fonts      <span class="token comment" spellcheck="true"># 字体</span>
-<span class="token punctuation">|</span>   <span class="token punctuation">|</span>   ├── images     <span class="token comment" spellcheck="true"># 图片</span>
-<span class="token punctuation">|</span>   <span class="token punctuation">|</span>   └── style.styl <span class="token comment" spellcheck="true"># *.styl引入需要的css源码</span>
-<span class="token punctuation">|</span>   ├── fancybox       <span class="token comment" spellcheck="true"># fancybox效果源码</span>
-<span class="token punctuation">|</span>   └── js             <span class="token comment" spellcheck="true"># javascript源代码</span>
-├── _config.yml        <span class="token comment" spellcheck="true"># 主题配置文件</span>
-└── README.md          <span class="token comment" spellcheck="true"># 用GitHub的都知道</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="layout目录"><a href="#layout目录" class="headerlink" title="layout目录"></a>layout目录</h4><p>目录部分</p>
-<ul>
-<li><code>_partial</code>主要修改文件</li>
-</ul>
-<pre class="line-numbers language-yaml"><code class="language-yaml">bg<span class="token punctuation">-</span>cover<span class="token punctuation">-</span>content.ejs       <span class="token comment" spellcheck="true"># 主页背景图相关，banner图切换，打字机效果加字等</span>
-footer.ejs                  <span class="token comment" spellcheck="true"># 页脚配置</span>
-social<span class="token punctuation">-</span>link.ejs            <span class="token comment" spellcheck="true"># 修改社交链接，微信，qq，微博等</span>
+                <p><strong>首先声明一下，一定要分清什么是站点配置文件，什么是主题文件，比如我在 F 盘新建我的博客文件夹，名称为 blog，那么站点配置文件的路径为 F:/blog/_config.yml，而你的主题配置文件路径为 F:/blog/themes/matery/_config.yml。</strong></p>
+<h4 id="1-修改主题的基本信息"><a href="#1-修改主题的基本信息" class="headerlink" title="1. 修改主题的基本信息"></a>1. 修改主题的基本信息</h4><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true">#这是根目录下的配置文件信息</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> 过客~励む   <span class="token comment" spellcheck="true">#这是网站标题</span>
+<span class="token key atrule">subtitle</span><span class="token punctuation">:</span> 励む    <span class="token comment" spellcheck="true">#这是网站副标题subtitle</span>
+<span class="token comment" spellcheck="true"># 下面两个description,keywords，需要填上，如果想让搜索引擎收录，这个做SEO优化必不可忽视的两个属性</span>
+<span class="token key atrule">description</span><span class="token punctuation">:</span> 专注于Web<span class="token punctuation">,</span>分享生活<span class="token punctuation">,</span>分享知识  <span class="token comment" spellcheck="true">#网站描述</span>
+<span class="token key atrule">keywords</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>HTML<span class="token punctuation">,</span> CSS<span class="token punctuation">,</span> JavaScript<span class="token punctuation">,</span> JQuery<span class="token punctuation">,</span> React<span class="token punctuation">,</span> Vue.js等<span class="token punctuation">]</span>  <span class="token comment" spellcheck="true">#网站的关键词</span>
+<span class="token key atrule">author</span><span class="token punctuation">:</span> YangAir  <span class="token comment" spellcheck="true">#作者，文章版权所显示的</span>
+<span class="token key atrule">language</span><span class="token punctuation">:</span> zh<span class="token punctuation">-</span>CN  <span class="token comment" spellcheck="true">#网站语言，不填写，默认为英文</span>
+<span class="token key atrule">timezone</span><span class="token punctuation">:</span>   <span class="token comment" spellcheck="true">#时区，可以不填写</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-修改主题的-logo-图和-favicon-图标"><a href="#2-修改主题的-logo-图和-favicon-图标" class="headerlink" title="2. 修改主题的 logo 图和 favicon 图标"></a>2. 修改主题的 logo 图和 favicon 图标</h4><p>打开你的主题配置文件，找到如下的配置，将其更改为你的 logo 和 favicon 路径即可：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 配置网站favicon和网站LOGO</span>
+<span class="token key atrule">favicon</span><span class="token punctuation">:</span> /favicon.png
+<span class="token key atrule">logo</span><span class="token punctuation">:</span> /favicon.png
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>文件</p>
-<pre class="line-numbers language-yaml"><code class="language-yaml">404.ejs                 <span class="token comment" spellcheck="true"># 404页面</span>
-about.ejs               <span class="token comment" spellcheck="true"># 关于我页面，个人简历</span>
-archive.ejs
-categories.ejs
-category.ejs
-contact.ejs
-douban.ejs                <span class="token comment" spellcheck="true"># 豆瓣插件</span>
-friends.ejs
-galleries.ejs            <span class="token comment" spellcheck="true"># 自定义相册</span>
-gallery.ejs                <span class="token comment" spellcheck="true"># 自定义相册</span>
-index.ejs
-layout.ejs                <span class="token comment" spellcheck="true"># 比较重要，我的天气，动态标签，鼠标点击特效等都在这开启</span>
-post.ejs
-tag.ejs
-tags.ejs
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>重点是这个<strong>layout.ejs</strong>，几乎所有自定义特效都在这个文件开启</p>
-</blockquote>
-<h4 id="source目录-1"><a href="#source目录-1" class="headerlink" title="source目录"></a>source目录</h4><p>存放主题源码</p>
-<pre class="line-numbers language-yaml"><code class="language-yaml">├── css            <span class="token comment" spellcheck="true">#css源码 </span>
-<span class="token punctuation">|</span>   ├── gallery.css      <span class="token comment" spellcheck="true"># 相册css</span>
-<span class="token punctuation">|</span>   ├── gitment.css   
-<span class="token punctuation">|</span>   ├── matery.css          <span class="token comment" spellcheck="true"># 主页的css相关调整，字体调整，主题色修改</span>
-<span class="token punctuation">|</span>   ├── my<span class="token punctuation">-</span>gitalk.css      
-<span class="token punctuation">|</span>   └── my.css           <span class="token comment" spellcheck="true"># hexo-filter-github-emojis</span>
-├── js                       <span class="token comment" spellcheck="true"># javascript源代码，自定义js</span>
-<span class="token punctuation">|</span>   ├── click.js          <span class="token comment" spellcheck="true"># 鼠标点击特效</span>
-<span class="token punctuation">|</span>   ├── crypto<span class="token punctuation">-</span>js.js      <span class="token comment" spellcheck="true"># 加密相关</span>
-<span class="token punctuation">|</span>   ├── cursor.js         <span class="token comment" spellcheck="true"># 雪花背景特效</span>
-<span class="token punctuation">|</span>   ├── fireworks.js    <span class="token comment" spellcheck="true"># 鼠标点击烟花特效</span>
-<span class="token punctuation">|</span>   └── gallery<span class="token punctuation">-</span>encrypt.js          <span class="token comment" spellcheck="true"># 相册加密</span>
-├── libs         <span class="token comment" spellcheck="true"># 库文件，fancybox效果等插件需在这里打开</span>
-├── medias       <span class="token comment" spellcheck="true"># 主题内用到的背景图，图标，打赏图等都在这里</span>
-└── favicon.png            <span class="token comment" spellcheck="true"># 网页标签图</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p><strong>js</strong>目录比较重要，所有自定特效，鼠标点击特效，背景特效在这里定义</p>
-</blockquote>
+<h4 id="3-去掉右上角的-github-图标"><a href="#3-去掉右上角的-github-图标" class="headerlink" title="3. 去掉右上角的 github 图标"></a>3. 去掉右上角的 github 图标</h4><p>打开你的主题配置文件，找到下面的配置:</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># Whether to display fork me on github icon and link, default true, You can change it to your repo address</span>
+<span class="token comment" spellcheck="true"># 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.</span>
+<span class="token key atrule">githubLink</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/blinkfox/hexo<span class="token punctuation">-</span>theme<span class="token punctuation">-</span>matery
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> Fork Me
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>将 <strong>enable</strong> 的属性值由 <strong>true</strong> 改为 <strong>false</strong> 即可。</p>
+<h4 id="4-去掉主页的-Github-按钮"><a href="#4-去掉主页的-Github-按钮" class="headerlink" title="4. 去掉主页的 Github 按钮"></a>4. 去掉主页的 Github 按钮</h4><p>打开主题配置文件，找到下面的配置：</p>
+<pre><code># 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
+indexbtn:
+  enable: true
+  name: Github
+  icon: fab fa-github-alt
+  url: https://github.com/blinkfox/hexo-theme-matery
+</code></pre>
+<p>将 <strong>enable</strong> 属性值由 <strong>true</strong> 改为 <strong>false</strong> 即可。</p>
+<h4 id="5-修改社交链接"><a href="#5-修改社交链接" class="headerlink" title="5. 修改社交链接"></a>5. 修改社交链接</h4><p>主页 banner 图中显示的社交链接与底部的社交链接是同步修改的，打开主题配置文件，将社交链接信息修改为你的信息。修改如下:</p>
+<pre><code># 首页 banner 中的第二行个人信息配置，留空即不启用
+socialLink:
+  github:  https://github.com/blinkfox
+  email: 1181062873@qq.com
+  facebook: # https://www.facebook.com/xxx
+  twitter: # https://twitter.com/xxx
+  qq: 1181062873
+  weibo: # https://weibo.com/xxx
+  zhihu: # https://www.zhihu.com/xxx
+  rss: true # true、false
+</code></pre>
+<p>如果想添加简书，CSDN，掘金，博客园等等，需要在主题配置文件添加相关配置，如下是我个人的配置：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">socialLink</span><span class="token punctuation">:</span>
+  <span class="token key atrule">qq</span><span class="token punctuation">:</span> <span class="token number">1035800145</span>
+  <span class="token key atrule">weixin</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/Yafine/Yafine<span class="token punctuation">-</span>imgs/images/wechat.png
+  <span class="token key atrule">github</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/Yafine
+  <span class="token key atrule">email</span><span class="token punctuation">:</span> mailto<span class="token punctuation">:</span>1035800145@qq.com
+  <span class="token key atrule">facebook</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># https://www.facebook.com/xxx</span>
+  <span class="token key atrule">twitter</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># https://twitter.com/xxx</span>
+  <span class="token key atrule">weibo</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># https://weibo.com/xxx</span>
+  <span class="token key atrule">zhihu</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//www.zhihu.com/people/xuan<span class="token punctuation">-</span>tian<span class="token punctuation">-</span>40<span class="token punctuation">-</span>64/activities
+  <span class="token key atrule">juejin</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//juejin.im/user/5a902053f265da4e7527ae71/activities
+  <span class="token key atrule">csdn</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//blog.csdn.net/victoryxa
+  <span class="token key atrule">jianshu</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//www.jianshu.com/u/3b3856869772
+  <span class="token key atrule">cnblogs</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//www.cnblogs.com/yafine/
+  <span class="token key atrule">rss</span><span class="token punctuation">:</span> <span class="token boolean important">true </span><span class="token comment" spellcheck="true"># true、false</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>其中的 <code>weixin</code> 我是用的图片链接，会跳转到一个新的标签页，之后还需要修改 <code>ejs</code> 文件，文件在主题目录下的 <code>layout</code> 文件夹下的<code>_partial</code> 文件夹，修改 <code>social-link.ejs</code>，添加相关的配置，我个人添加的配置如下：</p>
+<pre><code>javascript
+&lt;% if (theme.socialLink.jianshu) { %&gt;
+    &lt;a href="&lt;%= theme.socialLink.jianshu %&gt;" class="tooltipped" target="_blank" data-tooltip="关注我的简书: &lt;%= theme.socialLink.jianshu %&gt;" data-position="top" data-delay="50"&gt;
+        &lt;i class="fab fa-jianshu"&gt;简&lt;/i&gt;
+    &lt;/a&gt;
+&lt;% } %&gt;
+
+&lt;% if (theme.socialLink.csdn) { %&gt;
+    &lt;a href="&lt;%= theme.socialLink.csdn %&gt;" class="tooltipped" target="_blank" data-tooltip="关注我的CSDN: &lt;%= theme.socialLink.csdn %&gt;" data-position="top" data-delay="50"&gt;
+        &lt;i class="fab fa-csdn"&gt;C&lt;/i&gt;
+    &lt;/a&gt;
+&lt;% } %&gt;
+&lt;% if (theme.socialLink.juejin) { %&gt;
+    &lt;a href="&lt;%= theme.socialLink.juejin %&gt;" class="tooltipped" target="_blank" data-tooltip="关注我的掘金: &lt;%= theme.socialLink.juejin %&gt;" data-position="top" data-delay="50"&gt;
+        &lt;i class="fab fa-juejin"&gt;掘&lt;/i&gt;
+    &lt;/a&gt;
+&lt;% } %&gt;
+
+&lt;% if (theme.socialLink.cnblogs) { %&gt;
+    &lt;a href="&lt;%= theme.socialLink.cnblogs %&gt;" class="tooltipped" target="_blank" data-tooltip="关注我的博客园: &lt;%= theme.socialLink.cnblogs %&gt;" data-position="top" data-delay="50"&gt;
+        &lt;i class="fab fa-juejin"&gt;博&lt;/i&gt;
+    &lt;/a&gt;
+&lt;% } %&gt;
+&lt;% if (theme.socialLink.weixin) { %&gt;
+    &lt;a href="&lt;%= theme.socialLink.weixin %&gt;" class="tooltipped" target="_blank" data-tooltip="微信联系我: &lt;%= theme.socialLink.weixin %&gt;" data-position="top" data-delay="50"&gt;
+        &lt;i class="fab fa-weixin"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;% } %&gt;
+</code></pre>
+<h4 id="6-去掉-banner-图的动态滤镜颜色并修改导航栏颜色"><a href="#6-去掉-banner-图的动态滤镜颜色并修改导航栏颜色" class="headerlink" title="6. 去掉 banner 图的动态滤镜颜色并修改导航栏颜色"></a>6. 去掉 banner 图的动态滤镜颜色并修改导航栏颜色</h4><ol>
+<li>去掉动态滤镜颜色</li>
+</ol>
+<p>打开 <code>themes/matery/source/css/matery.css</code> 文件，查找下面的代码块，然后将其注释即可。如下：</p>
+<pre><code>css
+.bg-cover:after {
+    -webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite;
+}
+</code></pre>
+<p>或者是找到如下代码，将其注释掉即可：</p>
+<pre><code>css
+/*如果想去掉banner图的颜色渐变效果，请将以下的css属性注释掉或者删除掉即可*/
+@-webkit-keyframes rainbow {
+   /* 动态切换背景颜色. */
+}
+@keyframes rainbow {
+    /* 动态切换背景颜色. */
+}
+</code></pre>
+<p>上面的两段代码是有关联的，将<code>.bg-cover:after</code> 这段代码注释掉，上面的代码就不会起作用了。</p>
+<ol>
+<li>修改导航栏颜色及透明效果</li>
+</ol>
+<p>打开 <code>themes/matery/source/css/matery.css</code> 文件，大约在 250 行，有一个<code>.bg-color</code> 属性，修改其属性值即可，代码如下：</p>
+<pre><code>css
+.bg-color {
+    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); //修改成自己喜欢的颜色值
+    opacity: 0.8;  //透明效果 值范围 0~1，看情况自己修改
+}
+</code></pre>
+<h4 id="7-修改-banner-图和文章特色图"><a href="#7-修改-banner-图和文章特色图" class="headerlink" title="7. 修改 banner 图和文章特色图"></a>7. 修改 banner 图和文章特色图</h4><p>你可以直接在 <code>/source/medias/banner</code> 文件夹中更换你喜欢的 <code>banner</code> 图片，主题代码中是每天动态切换一张，只需 <code>7</code> 张即可。如果你会 <code>JavaScript</code> 代码，可以修改成你自己喜欢切换逻辑，如：随机切换等，<code>banner</code> 切换的代码位置在 <code>/layout/_partial/bg-cover-content.ejs</code> 文件的 <code>&lt;script&gt;&lt;/script&gt;</code> 代码中：</p>
+<pre><code>javascript
+$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+</code></pre>
+<p>在 <code>/source/medias/featureimages</code> 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 <code>_config.yml</code> 做同步修改。</p>
+<p>如果想改为每小时或者每分钟切换 banner 图的话，需要将 <code>getDay()</code> 改为 <code>getHours()</code> 或者 <code>getMinutes()</code> 即可。</p>
+<p>注意：这个不会自动切换 banner 图，需要刷新页面才可以，更换为每分钟或每小时可能会出现问题，如图片显示不出来，具体的解决办法，自己研究吧😂，可能是图片数量不足，或者是图片命名规范的问题。</p>
+<h4 id="8-添加首页动态打字效果副标题"><a href="#8-添加首页动态打字效果副标题" class="headerlink" title="8. 添加首页动态打字效果副标题"></a>8. 添加首页动态打字效果副标题</h4><p>在主题配置文件中，找到下面的配置：</p>
+<pre><code>yml
+# 网站副标题，打字效果
+# 如果有符号 ‘ ，请在 ’ 前面加上 \
+subtitle: 
+  enable: true
+  loop: true # 是否循环
+  showCursor: true # 是否显示光标
+  startDelay: 300 # 开始延迟
+  typeSpeed: 100 # 打字速度
+  backSpeed: 50 # 删除速度
+  sub1: 志之所向，金石为开，谁能御之？
+  sub2: 花开不是为了花落，而是为了开的更加灿烂。
+  sub3: 没有伞的孩子必须努力奔跑！
+  sub4: 欲望以提升热忱，毅力以磨平高山。
+  sub5: 如果放弃太早，你永远都不知道自己会错过什么。
+  sub6: 没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。
+</code></pre>
+<p><strong>注意：</strong></p>
+<p>网站打字效果副标题默认有两个，即 <code>sub1</code> 和 <code>sub2</code>，如果想写多个，则需要修改两处地方，首先修改配置文件，如上面所示，在 <code>sub1</code> 和 <code>sub2</code> 后面继续添加即可，然后在去主题目录下的 <code>layout</code> 文件夹下的<code>_partial</code> 文件夹，修改 <code>bg-cover-content.ejs</code> 文件，大约在 12 行左右，如下面所示：</p>
+<pre><code>javascript
+ &lt;div class="description center-align"&gt;
+     &lt;% if (theme.subtitle.enable) { %&gt;
+         &lt;span id="subtitle"&gt;&lt;/span&gt;
+         &lt;script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"&gt;&lt;/script&gt;
+        &lt;script&gt;
+            var typed = new Typed("#subtitle", {
+                strings: ['&lt;%= theme.subtitle.sub1 %&gt;',
+                          '&lt;%= theme.subtitle.sub2 %&gt;',
+                          '&lt;%= theme.subtitle.sub3 %&gt;',
+                          '&lt;%= theme.subtitle.sub4 %&gt;',
+                          '&lt;%= theme.subtitle.sub5 %&gt;',
+                          '&lt;%= theme.subtitle.sub6 %&gt;'],
+                 startDelay: &lt;%= theme.subtitle.startDelay %&gt;,
+                 typeSpeed: &lt;%= theme.subtitle.typeSpeed %&gt;,
+                 loop: &lt;%= theme.subtitle.loop %&gt;,   
+                 backSpeed: &lt;%= theme.subtitle.backSpeed %&gt;,
+                 showCursor: &lt;%= theme.subtitle.showCursor %&gt;
+              });
+          &lt;/script&gt;
+      &lt;% } else { %&gt;
+            &lt;%= config.description %&gt;
+      &lt;% } %&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="9-动态标题"><a href="#9-动态标题" class="headerlink" title="9.动态标题"></a>9.动态标题</h4><p>实现方法，引入 js 文件，在主题文件下的 <code>/source/js/</code> 下新建 <code>FunnyTitle.js</code>，然后在添加到 <code>themes/matery/layout/layout.ejs</code> 或者添加到 <code>themes/matery/layout/_partial/head.ejs</code>，其代码如下：</p>
+<pre><code>javascript
+&lt;!--浏览器搞笑标题--&gt;
+ var OriginTitle = document.title;
+ var titleTime;
+ document.addEventListener('visibilitychange', function () {
+     if (document.hidden) {
+         $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/favicon.png");
+         document.title = 'ヽ(●-`Д´-)ノ你要玩捉迷藏嘛';
+         clearTimeout(titleTime);
+     }
+     else {
+         $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/favicon.png");
+         document.title = 'ヾ(Ő∀Ő3)ノ好哦！' + OriginTitle;
+         titleTime = setTimeout(function () {
+             document.title = OriginTitle;
+         }, 2000);
+     }
+ });
+</code></pre>
+<p>或者直接在 <code>themes/matery/layout/layout.ejs</code> 文件中添加如下代码：</p>
+<pre><code>javascript
+&lt;script type="text/javascript"&gt;
+    var OriginTitile=document.title,st;
+    document.addEventListener("visibilitychange",function(){
+        document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+    })
+&lt;/script&gt;
+</code></pre>
+<h4 id="10-修改导航栏颜色以及透明效果"><a href="#10-修改导航栏颜色以及透明效果" class="headerlink" title="10.修改导航栏颜色以及透明效果"></a>10.修改导航栏颜色以及透明效果</h4><p>打开 <code>themes/matery/source/css/matery.css</code> 文件，大约在 250 行，有一个<code>.bg-color</code> 属性，修改其属性值即可，代码如下：</p>
+<pre><code>css
+.bg-color {
+    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); //修改成自己喜欢的颜色值
+    opacity: 0.8;  //透明效果 值范围 0~1，看情况自己修改
+}
+</code></pre>
+<h4 id="11-添加动态诗词"><a href="#11-添加动态诗词" class="headerlink" title="11. 添加动态诗词"></a>11. 添加动态诗词</h4><p>采用的是<a target="_blank" rel="noopener" href="https://www.jinrishici.com/">今日诗词</a>，每次返回一句诗词，根据时间、地点、天气、事件智能推荐。官网有 <a target="_blank" rel="noopener" href="https://www.jinrishici.com/doc/">API 文档</a>，可以去看一下，有多种安装方式，最简单的方式就是从官网获取代码，在 <code>/themes/matery/layout/_partial/head.ejs</code> 添加下面的一行代码：</p>
+<pre><code>javascript
+&lt;script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"&gt;&lt;/script&gt;
+</code></pre>
+<p>然后再将 <code>/themes/matery/layout/_partial/bg-cover-content.ejs</code> 中的 <code>&lt;%= config.description %&gt;</code> 修改为 <code>&lt;%- '&lt;span id="jinrishici-sentence"&gt;正在加载今日诗词....&lt;/span&gt;' %&gt;</code>，这个使用前提是将主题配置文件的 <code>subtitle</code> 的值改为 <code>false</code>。</p>
+<h4 id="12-鼠标点击文字特效"><a href="#12-鼠标点击文字特效" class="headerlink" title="12.鼠标点击文字特效"></a>12.鼠标点击文字特效</h4><p>实现方法，引入 js 文件，在主题文件下的 <code>/source/js/</code> 下新建 <code>click_show_text.js</code>，其代码如下：</p>
+<pre><code>javascript
+复制成功var a_idx = 0;
+jQuery(document).ready(function ($) {
+    $("body").click(function (e) {
+        var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+        var $i = $("&lt;span/&gt;").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+            y = e.pageY;
+        $i.css({
+            "z-index": 5,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "#FF0000"
+        });
+        $("body").append($i);
+        $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+            3000,
+            function () {
+                $i.remove();
+            });
+    });
+    setTimeout('delay()', 2000);
+});
+
+function delay() {
+    $(".buryit").removeAttr("onclick");
+}
+</code></pre>
+<p>或者使用我的 cdn 链接，理论上一直有效 <strong><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.3.4/source/js/click_show_text.js">https://cdn.jsdelivr.net/gh/Yafine/cdn@3.3.4/source/js/click_show_text.js</a></strong>，然后在添加到 <code>themes/matery/layout/layout.ejs</code>。</p>
+<h4 id="13-鼠标点击礼花特效"><a href="#13-鼠标点击礼花特效" class="headerlink" title="13. 鼠标点击礼花特效"></a>13. 鼠标点击礼花特效</h4><p>文件地址：<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.1.3/source/js/lihua.js">传送门</a></p>
+<p>在 <strong>matery/source/js/</strong> 目录下新建 <strong>lihua.js</strong>，然后打开上面的传送门网址，将代码复制粘贴进 js 文件里，然后在 <strong>layout.ejs</strong> 文件里引用，最后本地运行查看效果即可。</p>
+<h4 id="14-自定义鼠标样式"><a href="#14-自定义鼠标样式" class="headerlink" title="14. 自定义鼠标样式"></a>14. 自定义鼠标样式</h4><p>建议大家下载鼠标指针样式的格式为 ico 格式，大小为 16<em>16，或者 24</em>24 的。</p>
+<p>首先将鼠标样式下载到本地，推荐大家一个网站，可以免费下载，不过需要登录一下：网址为：<a target="_blank" rel="noopener" href="https://www.easyicon.net/">https://www.easyicon.net/</a></p>
+<p>以我的为例，我将鼠标指针样式放在了主题文件夹下的 medias 目录下，然后打开主题文件夹下的 <strong>my.css</strong> 文件，添加内容如下：</p>
+<pre><code>css
+*{
+    cursor: url("/medias/cursor1.ico"),auto!important;
+}
+:active{
+    cursor: url("/medias/cursor2.ico"),auto!important;
+}
+</code></pre>
+<p>然后在本地运行查看效果即可</p>
+<h4 id="15-添加鼠标彩虹星星掉落跟随效果"><a href="#15-添加鼠标彩虹星星掉落跟随效果" class="headerlink" title="15. 添加鼠标彩虹星星掉落跟随效果"></a>15. 添加鼠标彩虹星星掉落跟随效果</h4><p>在 <code>themes/matery/source/js</code> 目录下新建 <code>cursor.js</code> 文件，打开这个网址<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.3.4/source/js/cursor.js">传送门</a>，将内容复制粘贴到 cursor.js 即可。</p>
+<p>然后再 <code>themes/matery/layout/layout.ejs</code> 文件内添加下面的内容：</p>
+<pre><code>javascript
+&lt;script src="/js/cursor.js"&gt;&lt;/script&gt;
+</code></pre>
 
                 
             </div>
@@ -687,7 +856,7 @@ tags.ejs
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lycode1202.github.io/2022/03/06/hexo-bo-ke-mu-lu-jie-xi/">https://lycode1202.github.io/2022/03/06/hexo-bo-ke-mu-lu-jie-xi/</a>
+                    <a href="https://lycode1202.github.io/2022/03/06/hexo-bo-ke-mei-hua-2/">https://lycode1202.github.io/2022/03/06/hexo-bo-ke-mei-hua-2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -904,13 +1073,13 @@ tags.ejs
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/06/springboot2-zheng-he-mybatis-plus/">
+                <a href="/2022/03/06/hexo-bo-ke-mei-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/3.jpg" class="responsive-img" alt="SpringBoot2整合Mybatis-plus">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/4.jpg" class="responsive-img" alt="hexo博客美化-基本配置">
                         
-                        <span class="card-title">SpringBoot2整合Mybatis-plus</span>
+                        <span class="card-title">hexo博客美化-基本配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -934,8 +1103,8 @@ tags.ejs
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/SpringBoot/">
-                        <span class="chip bg-color">SpringBoot</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -949,13 +1118,13 @@ tags.ejs
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/06/springboot2-xiao-xi-zhong-jian-jian-rabbitmq/">
+                <a href="/2022/03/06/hexo-bo-ke-mei-hua-3/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/19.jpg" class="responsive-img" alt="SpringBoot2消息中间件RabbitMQ">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/20.jpg" class="responsive-img" alt="hexo博客美化">
                         
-                        <span class="card-title">SpringBoot2消息中间件RabbitMQ</span>
+                        <span class="card-title">hexo博客美化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -979,8 +1148,8 @@ tags.ejs
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/SpringBoot/">
-                        <span class="chip bg-color">SpringBoot</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>

@@ -4,11 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo-matery博客目录结构, python,mysql,java,springboot,hexo,HTML,CSS等">
-    <meta name="description" content="目录部分
-deploy_git，与git是git相关内容，如果无法git到仓库，需要检查git文件夹中配置
-scaffolds，存放的是默认生成md文件的配置，其中post.md是默认生成文章的配置
-scripts，扩展脚本目录，这里可以自">
+    <meta name="keywords" content="hexo博客美化, python,mysql,java,springboot,hexo,HTML,CSS等">
+    <meta name="description" content="在 Hexo 博客中创建自定义页面使用hexo创建的静态博客，所有博文内容都是有markdown生成，且页面样式也是由下载的主题自动化生成的，那么想要在独立页面中大展身手的前端小伙伴，如何将写好的静态页面引入到hexo博客中呢？html，c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +17,7 @@ scripts，扩展脚本目录，这里可以自">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo-matery博客目录结构 | 寜笙的博客</title>
+    <title>hexo博客美化 | 寜笙的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -384,12 +381,12 @@ scripts，扩展脚本目录，这里可以自">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo-matery博客目录结构</h1>
+                    <h1 class="description center-align post-title">hexo博客美化</h1>
                 </div>
             </div>
         </div>
@@ -535,14 +532,14 @@ scripts，扩展脚本目录，这里可以自">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    850
+                    302
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -562,105 +559,23 @@ scripts，扩展脚本目录，这里可以自">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="目录部分"><a href="#目录部分" class="headerlink" title="目录部分"></a>目录部分</h4><ul>
-<li><code>deploy_git</code>，与<code>git</code>是<strong>git</strong>相关内容，如果无法git到仓库，需要检查git文件夹中配置</li>
-<li><code>scaffolds</code>，存放的是默认生成md文件的配置，其中<code>post.md</code>是默认生成文章的配置</li>
-<li><code>scripts</code>，扩展脚本目录，这里可以自定义一些javascript脚本存放的是页面加载脚本(非默认)</li>
-<li><strong><code>source</code>，hexo源码目录，是核心目录，下面详解</strong></li>
-<li><strong><code>themes</code>，是主题目录，下面详解</strong></li>
-<li><code>packages，</code>是存放看板动画模型的(非默认)</li>
-<li><code>public，</code>是通过hexo g编译出来的最终网页文件，也是部署到github上的文件，输出的静态网页内容目录</li>
-<li><code>node_modules</code>，是hexo的一些库文件</li>
-</ul>
-<h4 id="文件部分"><a href="#文件部分" class="headerlink" title="文件部分"></a>文件部分</h4><ul>
-<li><strong><code>_config.yml</code>，是hexo的全局配置文件(核心配置文件)，一些插件安装后都需在此文件开启</strong></li>
-<li><code>CNAME</code>，可配置个人域名</li>
-<li><code>package.json</code>，应用程序数据，指明hexo的版本等信息，类似于一般软件中的关于按钮</li>
-<li><code>main.py</code>，个人快速执行脚本(非默认)</li>
-</ul>
-<h3 id="source目录"><a href="#source目录" class="headerlink" title="source目录"></a>source目录</h3><p><strong>hexo的源码目录，写文章的主要目录</strong></p>
-<pre class="line-numbers language-yaml"><code class="language-yaml">├── _data              <span class="token comment" spellcheck="true"># 存放友链的friends.json和相册的json</span>
-├── _posts             <span class="token comment" spellcheck="true"># 所有文章就在这里</span>
-├── 404                <span class="token comment" spellcheck="true"># 404相关</span>
-├── categories         <span class="token comment" spellcheck="true"># 归档页面</span>
-├── contact            <span class="token comment" spellcheck="true"># 关于页面</span>
-├── friends            <span class="token comment" spellcheck="true"># 友联页面</span>
-├── galleries          <span class="token comment" spellcheck="true"># 相册页面</span>
-├── images             <span class="token comment" spellcheck="true"># 图片页面，其他图，懒加载图存放位置</span>
-├── media              <span class="token comment" spellcheck="true"># 多媒体</span>
-├── tags               <span class="token comment" spellcheck="true"># 标签页</span>
-├── 404.md             <span class="token comment" spellcheck="true"># 404崩溃页面</span>
-└── CANME
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="themes目录"><a href="#themes目录" class="headerlink" title="themes目录"></a>themes目录</h3><blockquote>
-<p>hexo-theme-matery主题为例，**<code>_config.yml</code>是主题配置文件，非常重要**</p>
-</blockquote>
-<pre class="line-numbers language-yaml"><code class="language-yaml">├── languages          <span class="token comment" spellcheck="true"># 多语言</span>
-<span class="token punctuation">|</span>   ├── default.yml    <span class="token comment" spellcheck="true"># 默认语言</span>
-<span class="token punctuation">|</span>   └── zh<span class="token punctuation">-</span>CN.yml      <span class="token comment" spellcheck="true"># 中文语言</span>
-├── layout             <span class="token comment" spellcheck="true"># 布局，根目录下的*.ejs文件是对主页，分页，存档等的控制</span>
-<span class="token punctuation">|</span>   ├── _partial       <span class="token comment" spellcheck="true"># 局部的布局，此目录下的*.ejs是对头尾等局部的控制</span>
-<span class="token punctuation">|</span>   └── _widget        <span class="token comment" spellcheck="true"># 小挂件的布局，页面下方小挂件的控制</span>
-├── source             <span class="token comment" spellcheck="true"># 源码</span>
-<span class="token punctuation">|</span>   ├── css            <span class="token comment" spellcheck="true"># css源码 </span>
-<span class="token punctuation">|</span>   <span class="token punctuation">|</span>   ├── _base      <span class="token comment" spellcheck="true"># *.styl基础css</span>
-<span class="token punctuation">|</span>   <span class="token punctuation">|</span>   ├── _partial   <span class="token comment" spellcheck="true"># *.styl局部css</span>
-<span class="token punctuation">|</span>   <span class="token punctuation">|</span>   ├── fonts      <span class="token comment" spellcheck="true"># 字体</span>
-<span class="token punctuation">|</span>   <span class="token punctuation">|</span>   ├── images     <span class="token comment" spellcheck="true"># 图片</span>
-<span class="token punctuation">|</span>   <span class="token punctuation">|</span>   └── style.styl <span class="token comment" spellcheck="true"># *.styl引入需要的css源码</span>
-<span class="token punctuation">|</span>   ├── fancybox       <span class="token comment" spellcheck="true"># fancybox效果源码</span>
-<span class="token punctuation">|</span>   └── js             <span class="token comment" spellcheck="true"># javascript源代码</span>
-├── _config.yml        <span class="token comment" spellcheck="true"># 主题配置文件</span>
-└── README.md          <span class="token comment" spellcheck="true"># 用GitHub的都知道</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="layout目录"><a href="#layout目录" class="headerlink" title="layout目录"></a>layout目录</h4><p>目录部分</p>
-<ul>
-<li><code>_partial</code>主要修改文件</li>
-</ul>
-<pre class="line-numbers language-yaml"><code class="language-yaml">bg<span class="token punctuation">-</span>cover<span class="token punctuation">-</span>content.ejs       <span class="token comment" spellcheck="true"># 主页背景图相关，banner图切换，打字机效果加字等</span>
-footer.ejs                  <span class="token comment" spellcheck="true"># 页脚配置</span>
-social<span class="token punctuation">-</span>link.ejs            <span class="token comment" spellcheck="true"># 修改社交链接，微信，qq，微博等</span>
+                <h1 id="在-Hexo-博客中创建自定义页面"><a href="#在-Hexo-博客中创建自定义页面" class="headerlink" title="在 Hexo 博客中创建自定义页面"></a>在 Hexo 博客中创建自定义页面</h1><p>使用<code>hexo</code>创建的静态博客，所有博文内容都是有<code>markdown</code>生成，且页面样式也是由下载的主题自动化生成的，那么想要在独立页面中大展身手的前端小伙伴，如何将写好的静态页面引入到<code>hexo</code>博客中呢？<code>html</code>，<code>css</code>，<code>js</code>等文件在<code>hexo</code>项目里如何避免被自动渲染呢？</p>
+<p>打开hexo项目根目录下的配置文件<code>_config.yml</code>，找到<code>skip_render:</code>，在这里就可以配置需要跳过渲染的文件。</p>
+<p>例如，我们把所有静态页面放到<code>source</code>文件夹下的<code>demo</code>文件夹中，只要配置</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">skip_render</span><span class="token punctuation">:</span> demo/**
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>就可以使<code>demo</code>下的所有文件（包括子文件）避免被编译。</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">skip_render</span><span class="token punctuation">:</span> demo/*             <span class="token comment" spellcheck="true"># 屏蔽demo文件夹下的文件，不包括子文件夹内的内容</span>
+<span class="token key atrule">skip_render</span><span class="token punctuation">:</span> demo/**            <span class="token comment" spellcheck="true"># 屏蔽demo文件夹下的所有文件，包括子文件夹内的内容</span>
+<span class="token key atrule">skip_render</span><span class="token punctuation">:</span> demo/index.html    <span class="token comment" spellcheck="true"># 屏蔽demo文件夹下的index.html，特指一个文件</span>
+<span class="token key atrule">skip_render</span><span class="token punctuation">:</span> demo/*.html        <span class="token comment" spellcheck="true"># 屏蔽demo文件夹下的所有html文件</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>写多个筛选条件时</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">skip_render</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> space/**
+    <span class="token punctuation">-</span> demo/*
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>文件</p>
-<pre class="line-numbers language-yaml"><code class="language-yaml">404.ejs                 <span class="token comment" spellcheck="true"># 404页面</span>
-about.ejs               <span class="token comment" spellcheck="true"># 关于我页面，个人简历</span>
-archive.ejs
-categories.ejs
-category.ejs
-contact.ejs
-douban.ejs                <span class="token comment" spellcheck="true"># 豆瓣插件</span>
-friends.ejs
-galleries.ejs            <span class="token comment" spellcheck="true"># 自定义相册</span>
-gallery.ejs                <span class="token comment" spellcheck="true"># 自定义相册</span>
-index.ejs
-layout.ejs                <span class="token comment" spellcheck="true"># 比较重要，我的天气，动态标签，鼠标点击特效等都在这开启</span>
-post.ejs
-tag.ejs
-tags.ejs
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>重点是这个<strong>layout.ejs</strong>，几乎所有自定义特效都在这个文件开启</p>
-</blockquote>
-<h4 id="source目录-1"><a href="#source目录-1" class="headerlink" title="source目录"></a>source目录</h4><p>存放主题源码</p>
-<pre class="line-numbers language-yaml"><code class="language-yaml">├── css            <span class="token comment" spellcheck="true">#css源码 </span>
-<span class="token punctuation">|</span>   ├── gallery.css      <span class="token comment" spellcheck="true"># 相册css</span>
-<span class="token punctuation">|</span>   ├── gitment.css   
-<span class="token punctuation">|</span>   ├── matery.css          <span class="token comment" spellcheck="true"># 主页的css相关调整，字体调整，主题色修改</span>
-<span class="token punctuation">|</span>   ├── my<span class="token punctuation">-</span>gitalk.css      
-<span class="token punctuation">|</span>   └── my.css           <span class="token comment" spellcheck="true"># hexo-filter-github-emojis</span>
-├── js                       <span class="token comment" spellcheck="true"># javascript源代码，自定义js</span>
-<span class="token punctuation">|</span>   ├── click.js          <span class="token comment" spellcheck="true"># 鼠标点击特效</span>
-<span class="token punctuation">|</span>   ├── crypto<span class="token punctuation">-</span>js.js      <span class="token comment" spellcheck="true"># 加密相关</span>
-<span class="token punctuation">|</span>   ├── cursor.js         <span class="token comment" spellcheck="true"># 雪花背景特效</span>
-<span class="token punctuation">|</span>   ├── fireworks.js    <span class="token comment" spellcheck="true"># 鼠标点击烟花特效</span>
-<span class="token punctuation">|</span>   └── gallery<span class="token punctuation">-</span>encrypt.js          <span class="token comment" spellcheck="true"># 相册加密</span>
-├── libs         <span class="token comment" spellcheck="true"># 库文件，fancybox效果等插件需在这里打开</span>
-├── medias       <span class="token comment" spellcheck="true"># 主题内用到的背景图，图标，打赏图等都在这里</span>
-└── favicon.png            <span class="token comment" spellcheck="true"># 网页标签图</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p><strong>js</strong>目录比较重要，所有自定特效，鼠标点击特效，背景特效在这里定义</p>
-</blockquote>
+<p>随后即可 hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</p>
 
                 
             </div>
@@ -687,7 +602,7 @@ tags.ejs
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lycode1202.github.io/2022/03/06/hexo-bo-ke-mu-lu-jie-xi/">https://lycode1202.github.io/2022/03/06/hexo-bo-ke-mu-lu-jie-xi/</a>
+                    <a href="https://lycode1202.github.io/2022/03/06/hexo-bo-ke-mei-hua-3/">https://lycode1202.github.io/2022/03/06/hexo-bo-ke-mei-hua-3/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -904,13 +819,13 @@ tags.ejs
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/06/springboot2-zheng-he-mybatis-plus/">
+                <a href="/2022/03/06/hexo-bo-ke-mei-hua-2/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/3.jpg" class="responsive-img" alt="SpringBoot2整合Mybatis-plus">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/20.jpg" class="responsive-img" alt="hexo博客美化">
                         
-                        <span class="card-title">SpringBoot2整合Mybatis-plus</span>
+                        <span class="card-title">hexo博客美化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -934,8 +849,8 @@ tags.ejs
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/SpringBoot/">
-                        <span class="chip bg-color">SpringBoot</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -946,16 +861,16 @@ tags.ejs
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/06/springboot2-xiao-xi-zhong-jian-jian-rabbitmq/">
+                <a href="/2022/03/06/hexo-bo-ke-mei-hua-3/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/19.jpg" class="responsive-img" alt="SpringBoot2消息中间件RabbitMQ">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/20.jpg" class="responsive-img" alt="hexo博客美化">
                         
-                        <span class="card-title">SpringBoot2消息中间件RabbitMQ</span>
+                        <span class="card-title">hexo博客美化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -976,11 +891,12 @@ tags.ejs
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/SpringBoot/">
-                        <span class="chip bg-color">SpringBoot</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
