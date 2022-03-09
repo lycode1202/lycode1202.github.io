@@ -439,20 +439,20 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/SpringBoot/" title="SpringBoot: 3">
+                <a href="/tags/git/" title="git: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="SpringBoot" style="background-color: #F9EBEA;">SpringBoot
-                        <span class="tag-length">3</span>
+                             chip-default "
+                            data-tagname="git" style="background-color: #F9EBEA;">git
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/git/" title="git: 1">
+                <a href="/tags/SpringBoot/" title="SpringBoot: 3">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="git" style="background-color: #F5EEF8;">git
-                        <span class="tag-length">1</span>
+                             chip-active "
+                            data-tagname="SpringBoot" style="background-color: #F5EEF8;">SpringBoot
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
@@ -1171,7 +1171,7 @@ $(function () {
                 // 通过XHR发送一个GET请求
                 console.log(question)
                 var xhr = new XMLHttpRequest()
-                xhr.open('GET', 'http://i.itpk.cn/api.php?question=' + encodeURIComponent(question) + "&api_key=" + api_key + "&api_secret=" + api_secret)
+                xhr.open('GET', '//i.itpk.cn/api.php?question=' + encodeURIComponent(question) + "&api_key=" + api_key + "&api_secret=" + api_secret)
                 xhr.send();
 
                 xhr.onreadystatechange=function()

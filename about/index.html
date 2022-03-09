@@ -1062,7 +1062,7 @@ $(function () {
                 // 通过XHR发送一个GET请求
                 console.log(question)
                 var xhr = new XMLHttpRequest()
-                xhr.open('GET', 'http://i.itpk.cn/api.php?question=' + encodeURIComponent(question) + "&api_key=" + api_key + "&api_secret=" + api_secret)
+                xhr.open('GET', '//i.itpk.cn/api.php?question=' + encodeURIComponent(question) + "&api_key=" + api_key + "&api_secret=" + api_secret)
                 xhr.send();
 
                 xhr.onreadystatechange=function()
