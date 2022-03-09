@@ -1332,22 +1332,21 @@ $(function () {
                 // encodeURIComponent 将问题编码
                 console.log(question)
                 var xhr = new XMLHttpRequest()
-                xhr.open('GET', 'https://api.qingyunke.com/api.php?key=free&appid=0&msg='+ encodeURIComponent(question))
+                xhr.open('GET', '//www.tuling123.com/openapi/api?userid=1&&key=b6ef78a0c1f24fee90d2317139b9c3d5&&info='+ encodeURIComponent(question))
                 xhr.send();
 
                 xhr.onreadystatechange=function()
                 {
                     if (xhr.readyState==4 && xhr.status==200)
                     {
-                        console.log(xhr);
-                        console.log(xhr.responseText);
+                        var obj = JSON.parse(xhr.responseText);
                         //启用输入框
                         question_box.removeAttribute('disabled');
                         //获取对话框
                         var live2d_dialog = document.getElementsByClassName("live2d-widget-dialog")[0]
                         //显示对话框并把获取到的内容显示在对话框上
                         live2d_dialog.style.opacity = 1
-                        live2d_dialog.innerHTML = xhr.responseText
+                        live2d_dialog.innerHTML = obj.text
                         console.log(live2d_dialog.innerHTML)
                         //五秒后隐藏对话框
                         window.setTimeout(() => {
