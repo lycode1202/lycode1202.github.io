@@ -1018,15 +1018,17 @@ $(function () {
                 var api_secret = "q707tevnk00f"
 
                 // 通过XHR发送一个GET请求
+                // encodeURIComponent 将问题编码
                 console.log(question)
                 var xhr = new XMLHttpRequest()
-                xhr.open('GET', '//i.itpk.cn/api.php?question=' + encodeURIComponent(question) + "&api_key=" + api_key + "&api_secret=" + api_secret)
+                xhr.open('GET', 'https://api.qingyunke.com/api.php?key=free&appid=0&msg='+ encodeURIComponent(question))
                 xhr.send();
 
                 xhr.onreadystatechange=function()
                 {
                     if (xhr.readyState==4 && xhr.status==200)
                     {
+                        console.log(xhr);
                         console.log(xhr.responseText);
                         //启用输入框
                         question_box.removeAttribute('disabled');
