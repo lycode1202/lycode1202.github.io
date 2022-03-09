@@ -465,7 +465,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"git","weight":1,"link":"/tags/git/"},{"text":"SpringBoot","weight":3,"link":"/tags/SpringBoot/"},{"text":"hexo","weight":4,"link":"/tags/hexo/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"SpringBoot","weight":3,"link":"/tags/SpringBoot/"},{"text":"git","weight":1,"link":"/tags/git/"},{"text":"hexo","weight":4,"link":"/tags/hexo/"}], {
         autoResize: true
     });
 </script>
@@ -484,20 +484,20 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/git/" title="git: 1">
+                <a href="/tags/SpringBoot/" title="SpringBoot: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="git" style="background-color: #F9EBEA;">git
-                        <span class="tag-length">1</span>
+                            data-tagname="SpringBoot" style="background-color: #F9EBEA;">SpringBoot
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/SpringBoot/" title="SpringBoot: 3">
+                <a href="/tags/git/" title="git: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="SpringBoot" style="background-color: #F5EEF8;">SpringBoot
-                        <span class="tag-length">3</span>
+                            data-tagname="git" style="background-color: #F5EEF8;">git
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -1293,22 +1293,21 @@ $(function () {
                 // encodeURIComponent 将问题编码
                 console.log(question)
                 var xhr = new XMLHttpRequest()
-                xhr.open('GET', 'https://api.qingyunke.com/api.php?key=free&appid=0&msg='+ encodeURIComponent(question))
+                xhr.open('GET', '//www.tuling123.com/openapi/api?userid=1&&key=b6ef78a0c1f24fee90d2317139b9c3d5&&info='+ encodeURIComponent(question))
                 xhr.send();
 
                 xhr.onreadystatechange=function()
                 {
                     if (xhr.readyState==4 && xhr.status==200)
                     {
-                        console.log(xhr);
-                        console.log(xhr.responseText);
+                        var obj = JSON.parse(xhr.responseText);
                         //启用输入框
                         question_box.removeAttribute('disabled');
                         //获取对话框
                         var live2d_dialog = document.getElementsByClassName("live2d-widget-dialog")[0]
                         //显示对话框并把获取到的内容显示在对话框上
                         live2d_dialog.style.opacity = 1
-                        live2d_dialog.innerHTML = xhr.responseText
+                        live2d_dialog.innerHTML = obj.text
                         console.log(live2d_dialog.innerHTML)
                         //五秒后隐藏对话框
                         window.setTimeout(() => {
