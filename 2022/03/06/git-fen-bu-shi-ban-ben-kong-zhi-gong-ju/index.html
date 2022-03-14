@@ -195,6 +195,17 @@
   
   <li class="hide-on-med-and-down nav-item">
     
+    <a href="/linksearch" class="waves-effect waves-light">
+      
+      <i class="fas fa-desktop" style="zoom: 0.6;"></i>
+      
+      <span>磁力搜索</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
     <a href="/download" class="waves-effect waves-light">
       
       <i class="fas fa-download" style="zoom: 0.6;"></i>
@@ -369,6 +380,17 @@
 			    <i class="fa-fw fas fa-desktop"></i>
 			
 			API使用
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/linksearch" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-desktop"></i>
+			
+			磁力搜索
 		</a>
           
         </li>
@@ -555,21 +577,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-07
+                    2022-03-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.8k
+                    6.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    21 分
+                    24 分
                 </div>
                 
 
@@ -596,7 +618,7 @@
 <li>熟悉Git代码托管服务</li>
 <li>能够使用idea操作git</li>
 </ul>
-<h2 id="2-、概述"><a href="#2-、概述" class="headerlink" title="2 、概述"></a>2 、概述</h2><h3 id="2-1、开发中的实际场景"><a href="#2-1、开发中的实际场景" class="headerlink" title="2.1、开发中的实际场景"></a>2.1、开发中的实际场景</h3><pre><code>场景一：备份
+<h2 id="2-、概述"><a href="#2-、概述" class="headerlink" title="2 、概述"></a>2 、概述</h2><h3 id="2-1、开发中的实际场景"><a href="#2-1、开发中的实际场景" class="headerlink" title="2.1、开发中的实际场景"></a>2.1、开发中的实际场景</h3><pre class="line-numbers language-yaml"><code class="language-yaml">场景一：备份
 小明负责的模块就要完成了，就在即将Release之前的一瞬间，电脑突然蓝屏，硬盘光荣牺牲！几个月来的努力付之东流
 
 场景二：代码还原
@@ -604,43 +626,43 @@
 
 场景三：协同开发
 小刚和小强先后从文件服务器上下载了同一个文件：Analysis.java。小刚在Analysis.java文件中的第 30 行声明了一个方法，叫count()，先保存到了文件服务器上；小强在Analysis.java文件中的第 50 行声明了一个方法，叫sum()，也随后保存到了文件服务器上，于是，count()方法就只存在于小刚的记忆中了
-
+ 
 场景四：追溯问题代码的编写人和编写时间！
 老王是另一位项目经理，每次因为项目进度挨骂之后，他都不知道该扣哪个程序员的工资！就拿这次来说吧，有个Bug调试了 30 多个小时才知道是因为相关属性没有在应用初始化时赋值！可是二胖、王东、刘流和正经牛都不承认是自己干的！
-</code></pre>
-<h3 id="2-2、版本控制器的方式"><a href="#2-2、版本控制器的方式" class="headerlink" title="2.2、版本控制器的方式"></a>2.2、版本控制器的方式</h3><pre><code>a、集中式版本控制工具
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-2、版本控制器的方式"><a href="#2-2、版本控制器的方式" class="headerlink" title="2.2、版本控制器的方式"></a>2.2、版本控制器的方式</h3><pre class="line-numbers language-yaml"><code class="language-yaml">a、集中式版本控制工具
 集中式版本控制工具，版本库是集中存放在中央服务器的，team里每个人work时从中央服务器下载代码，是必须联网才能工作，局域网或互联网。个人修改后然后提交到中央版本库。
 举例：SVN和CVS
 b、分布式版本控制工具
 分布式版本控制系统没有“中央服务器”，每个人的电脑上都是一个完整的版本库，这样工作的时候，无需要联网了，因为版本库就在你自己的电脑上。多人协作只需要各自的修改推送给对方，就能互相看到对方的修改了。
 举例：Git
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="2-3、SVN"><a href="#2-3、SVN" class="headerlink" title="2.3、SVN"></a>2.3、SVN</h3><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="C:\Users\liyi0\AppData\Roaming\Typora\typora-user-images\image-20220306182853761.png" alt="SVN"></p>
-<h3 id="2-4、Git"><a href="#2-4、Git" class="headerlink" title="2.4、Git"></a>2.4、Git</h3><pre><code>    Git是分布式的,Git不需要有中心服务器，我们每台电脑拥有的东西都是一样的。我们使用Git并且有个中心服务器，仅仅是为了方便交换大家的修改，但是这个服务器的地位和我们每个人的PC是一样的。我们可以把它当做一个开发者的pc就可以就是为了大家代码容易交流不关机用的。没有它大家一样可以工作，只不过“交换”修改不方便而已。
+<h3 id="2-4、Git"><a href="#2-4、Git" class="headerlink" title="2.4、Git"></a>2.4、Git</h3><pre class="line-numbers language-yaml"><code class="language-yaml">    Git是分布式的<span class="token punctuation">,</span>Git不需要有中心服务器，我们每台电脑拥有的东西都是一样的。我们使用Git并且有个中心服务器，仅仅是为了方便交换大家的修改，但是这个服务器的地位和我们每个人的PC是一样的。我们可以把它当做一个开发者的pc就可以就是为了大家代码容易交流不关机用的。没有它大家一样可以工作，只不过“交换”修改不方便而已。
     git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git是Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。同生活中的许多伟大事物一样，Git 诞生于一个极富纷争大举创新的年代。Linux 内核开源项目有着为数众多的参与者。 绝大多数的 Linux 内核维护工作都花在了提交补丁和保存归档的繁琐事务上（ 1991 － 2002年间）。 到 2002 年，整个项目组开始启用一个专有的分布式版本控制系统 BitKeeper 来管理和维护代码。到了 2005 年，开发 BitKeeper 的商业公司同 Linux 内核开源社区的合作关系结束，他们收回了Linux 内核社区免费使用 BitKeeper 的权力。 这就迫使 Linux 开源社区（特别是 Linux 的缔造者Linus Torvalds）基于使用 BitKeeper 时的经验教训，开发出自己的版本系统。 他们对新的系统制订了若干目标：
     速度
     简单的设计
     对非线性开发模式的强力支持（允许成千上万个并行开发的分支）
     完全分布式
     有能力高效管理类似 Linux 内核一样的超大规模项目（速度和数据量）
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="C:\Users\liyi0\AppData\Roaming\Typora\typora-user-images\image-20220306183304090.png" alt="git"></p>
 <h3 id="2-5、Git工作流程图"><a href="#2-5、Git工作流程图" class="headerlink" title="2.5、Git工作流程图"></a>2.5、Git工作流程图</h3><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="C:\Users\liyi0\AppData\Roaming\Typora\typora-user-images\image-20220306183454176.png" alt="image-20220306183454176"></p>
 <p>命令如下：</p>
-<pre><code>1. clone（克隆）: 从远程仓库中克隆代码到本地仓库
-2. checkout（检出）:从本地仓库中检出一个仓库分支然后进行修订
-3. add（添加）: 在提交前先将代码提交到暂存区
-4. commit（提交）: 提交到本地仓库。本地仓库中保存修改的各个历史版本
+<pre class="line-numbers language-yaml"><code class="language-yaml">1. clone（克隆）<span class="token punctuation">:</span> 从远程仓库中克隆代码到本地仓库
+2. checkout（检出）<span class="token punctuation">:</span>从本地仓库中检出一个仓库分支然后进行修订
+3. add（添加）<span class="token punctuation">:</span> 在提交前先将代码提交到暂存区
+4. commit（提交）<span class="token punctuation">:</span> 提交到本地仓库。本地仓库中保存修改的各个历史版本
 5. fetch (抓取) ： 从远程库，抓取到本地仓库，不进行任何的合并动作，一般操作比较少。
 6. pull (拉取) ： 从远程库拉到本地库，自动进行合并(merge)，然后放到到工作区，相当于fetch+merge
-7. push（推送） : 修改完成后，需要和团队成员共享代码时，将代码推送到远程仓库
-</code></pre>
+7. push（推送） <span class="token punctuation">:</span> 修改完成后，需要和团队成员共享代码时，将代码推送到远程仓库
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="3-、Git安装与常用命令"><a href="#3-、Git安装与常用命令" class="headerlink" title="3 、Git安装与常用命令"></a>3 、Git安装与常用命令</h2><p>本教程里的git命令例子都是在Git Bash中演示的，会用到一些基本的linux命令，在此为大家提前列举：</p>
-<pre><code>ls/ll         查看当前目录
+<pre class="line-numbers language-yaml"><code class="language-yaml">ls/ll         查看当前目录
 cat         查看文件内容
 touch         创建文件
 vi/vi编辑器 （使用vi编辑器是为了方便展示效果，学员可以记事本、editPlus、notPad++等其它编辑器）
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="3-1、-Git环境配置"><a href="#3-1、-Git环境配置" class="headerlink" title="3.1、 Git环境配置"></a>3.1、 Git环境配置</h3><p>3.1.1 下载与安装</p>
 <p>下载地址： <a target="_blank" rel="noopener" href="https://git-scm.com/download">https://git-scm.com/download</a></p>
 <p>双击下载的安装文件来安装Git。安装完成后在电脑桌面（也可以是其他目录）点击右键，如果能够看<br>到如下两个菜单则说明Git安装成功。</p>
@@ -655,12 +677,12 @@ vi/vi编辑器 （使用vi编辑器是为了方便展示效果，学员可以记
 <li><p>设置用户信息</p>
 </li>
 <li><p>查看配置信息</p>
-<pre><code>git config --global user.name “itcast”
+<pre class="line-numbers language-yaml"><code class="language-yaml">git config <span class="token punctuation">-</span><span class="token punctuation">-</span>global user.name “itcast”
 
-git config --global user.email “hello@itcast.cn”
+git config <span class="token punctuation">-</span><span class="token punctuation">-</span>global user.email “hello@itcast.cn”
 
-git config --list
-</code></pre>
+git config <span class="token punctuation">-</span><span class="token punctuation">-</span>list
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
 <p><strong>3.1.3 为常用指令配置别名（可选）</strong></p>
@@ -671,11 +693,11 @@ git config --list
 <p>部分windows系统不允许用户创建点号开头的文件，可以打开gitBash,执行 touch ~/.bashrc</p>
 <ol start="2">
 <li><p>在.bashrc文件中输入如下内容：</p>
-<pre><code>#用于输出git提交日志
-alias git-log='git log --pretty=oneline --all --graph --abbrev-commit'
-#用于输出当前目录所有文件及基本信息
-alias ll='ls -al'
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true">#用于输出git提交日志</span>
+alias git<span class="token punctuation">-</span>log='git log <span class="token punctuation">-</span><span class="token punctuation">-</span>pretty=oneline <span class="token punctuation">-</span><span class="token punctuation">-</span>all <span class="token punctuation">-</span><span class="token punctuation">-</span>graph <span class="token punctuation">-</span><span class="token punctuation">-</span>abbrev<span class="token punctuation">-</span>commit'
+<span class="token comment" spellcheck="true">#用于输出当前目录所有文件及基本信息</span>
+alias ll='ls <span class="token punctuation">-</span>al'
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>打开gitBash，执行source ~/.bashrc</p>
 </li>
@@ -683,13 +705,13 @@ alias ll='ls -al'
 <p><strong>3.1.4 解决GitBash乱码问题</strong></p>
 <ol>
 <li><p>打开GitBash执行下面命令</p>
-<pre><code>git config --global core.quotepath false
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">git config <span class="token punctuation">-</span><span class="token punctuation">-</span>global core.quotepath false
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><p>${git_home}/etc/bash.bashrc 文件最后加入下面两行</p>
-<pre><code>export LANG="zh_CN.UTF-8"
-export LC_ALL="zh_CN.UTF-8"
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">export LANG="zh_CN.UTF<span class="token punctuation">-</span>8"
+export LC_ALL="zh_CN.UTF<span class="token punctuation">-</span>8"
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </li>
 </ol>
 <h3 id="3-2、获取本地仓库"><a href="#3-2、获取本地仓库" class="headerlink" title="3.2、获取本地仓库"></a>3.2、获取本地仓库</h3><p>要使用Git对我们的代码进行版本控制，首先需要获得本地仓库</p>
@@ -715,8 +737,8 @@ export LC_ALL="zh_CN.UTF-8"
 <li><p>作用：添加工作区一个或多个文件的修改到暂存区</p>
 </li>
 <li><p>命令形式：git add 单个文件名|通配符 将所有修改加入暂存区：</p>
-<pre><code>git add .
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">git add .
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 </ul>
 <p><strong>3.3.3、*提交暂存区到本地仓库(commit)</strong></p>
@@ -726,8 +748,8 @@ export LC_ALL="zh_CN.UTF-8"
 </ul>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="C:\Users\liyi0\AppData\Roaming\Typora\typora-user-images\image-20220306185212856.png" alt="image-20220306185212856"></p>
 <p><strong>3.3.4、*查看提交日志(log)</strong></p>
-<pre><code>git-log
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">git<span class="token punctuation">-</span>log
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>在3.1.3中配置的别名</strong> git <strong>-</strong> log <strong>就包含了这些参数，所以后续可以直接使用指令</strong> git-log</p>
 <ul>
 <li>作用:查看提交记录</li>
@@ -758,90 +780,186 @@ export LC_ALL="zh_CN.UTF-8"
 <p><strong>3.3.6、添加文件至忽略列表</strong></p>
 <p>一般我们总会有些文件无需纳入Git 的管理，也不希望它们总出现在未跟踪文件列表。 通常都是些自动生成的文件，比如日志文件，或者编译过程中创建的临时文件等。 在这种情况下，我们可以在工作目录中创建一个名为 .gitignore 的文件（文件名称固定），列出要忽略的文件模式。下面是一个示例：</p>
 <p><strong>练习:基础操作</strong></p>
-<pre><code># no .a files
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># no .a files</span>
 *.a
-# but do track lib.a, even though you're ignoring .a files above
-!lib.a
-# only ignore the TODO file in the current directory, not subdir/TODO
+<span class="token comment" spellcheck="true"># but do track lib.a, even though you're ignoring .a files above</span>
+<span class="token tag">!lib.a</span>
+<span class="token comment" spellcheck="true"># only ignore the TODO file in the current directory, not subdir/TODO</span>
 /TODO
-# ignore all files in the build/ directory
+<span class="token comment" spellcheck="true"># ignore all files in the build/ directory</span>
 build/
-# ignore doc/notes.txt, but not doc/server/arch.txt
+<span class="token comment" spellcheck="true"># ignore doc/notes.txt, but not doc/server/arch.txt</span>
 doc/*.txt
-# ignore all .pdf files in the doc/ directory
+<span class="token comment" spellcheck="true"># ignore all .pdf files in the doc/ directory</span>
 doc/**/*.pdf
-</code></pre>
-<pre><code>#####################仓库初始化######################
-# 创建目录（git_test01）并在目录下打开gitbash
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true">#####################仓库初始化######################</span>
+<span class="token comment" spellcheck="true"># 创建目录（git_test01）并在目录下打开gitbash</span>
 略
-# 初始化git仓库
+<span class="token comment" spellcheck="true"># 初始化git仓库</span>
 git init
 
-#####################创建文件并提交#####################
-# 目录下创建文件 file01.txt
+<span class="token comment" spellcheck="true">#####################创建文件并提交#####################</span>
+<span class="token comment" spellcheck="true"># 目录下创建文件 file01.txt</span>
 略
-# 将修改加入暂存区
+<span class="token comment" spellcheck="true"># 将修改加入暂存区</span>
 git add .
-# 将修改提交到本地仓库，提交记录内容为：commit 001
-git commit -m 'commit 001'
-# 查看日志
+<span class="token comment" spellcheck="true"># 将修改提交到本地仓库，提交记录内容为：commit 001</span>
+git commit <span class="token punctuation">-</span>m 'commit 001'
+<span class="token comment" spellcheck="true"># 查看日志</span>
 git log
 
-####################修改文件并提交######################
-# 修改file01的内容为：count=
+<span class="token comment" spellcheck="true">####################修改文件并提交######################</span>
+<span class="token comment" spellcheck="true"># 修改file01的内容为：count=</span>
 略
-# 将修改加入暂存区
+<span class="token comment" spellcheck="true"># 将修改加入暂存区</span>
 git add.
-# # 将修改提交到本地仓库，提交记录内容为：update file
-git commit --m 'update file01'
-# 查看日志
+<span class="token comment" spellcheck="true"># # 将修改提交到本地仓库，提交记录内容为：update file</span>
+git commit <span class="token punctuation">-</span><span class="token punctuation">-</span>m 'update file01'
+<span class="token comment" spellcheck="true"># 查看日志</span>
 git log
-# 以精简的方式显示提交记录
-git-log
+<span class="token comment" spellcheck="true"># 以精简的方式显示提交记录</span>
+git<span class="token punctuation">-</span>log
 
-####################将最后一次修改还原##################
-# 查看提交记录
-git-log
-# 找到倒数第 2 次提交的commitID
+<span class="token comment" spellcheck="true">####################将最后一次修改还原##################</span>
+<span class="token comment" spellcheck="true"># 查看提交记录</span>
+git<span class="token punctuation">-</span>log
+<span class="token comment" spellcheck="true"># 找到倒数第 2 次提交的commitID</span>
 略
-# 版本回退
-git reset commitID --hard
-</code></pre>
+<span class="token comment" spellcheck="true"># 版本回退,想要回退哪一步，就找到该步的commitID</span>
+git reset commitID <span class="token punctuation">-</span><span class="token punctuation">-</span>hard
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="3-4、分支"><a href="#3-4、分支" class="headerlink" title="3.4、分支"></a>3.4、分支</h3><p>几乎所有的版本控制系统都以某种形式支持分支。 使用分支意味着你可以把你的工作从开发主线上分离开来进行重大的Bug修改、开发新的功能，以免影响开发主线。</p>
 <p><strong>3.4.1、查看本地分支</strong></p>
-<pre><code>命令：git branch
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">命令：git branch
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>3.4.2、创建本地分支</strong></p>
-<pre><code>命令：git branch 分支名
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">命令：git branch 分支名
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>3.4.4、*切换分支(checkout)</strong></p>
-<pre><code>命令：git checkout 分支名
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">命令：git checkout 分支名
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>我们还可以直接切换到一个不存在的分支（创建并切换）</p>
-<pre><code>命令：git checkout -b 分支名
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">命令：git checkout <span class="token punctuation">-</span>b 分支名
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>3.4.6、*合并分支(merge)</strong></p>
-<p>一个分支上的提交可以合并到另一个分支</p>
+<p>一个分支上的提交可以合并到另一个分支，首先切换到想要合并的分支上，然后选中被合并的分支</p>
 <p>命令：git merge 分支名称</p>
 <p><strong>3.4.7、删除分支</strong></p>
 <p><strong>不能删除当前分支，只能删除其他分支</strong></p>
 <p>git branch -d b1 删除分支时，需要做各种检查</p>
 <p>git branch -D b1 不做任何检查，强制删除</p>
 <p><strong>3.4.8、解决冲突</strong></p>
-<p>当两个分支上对文件的修改可能会存在冲突，例如同时修改了同一个文件的同一行，这时就需要手动解<br>决冲突，解决冲突步骤如下：</p>
-<pre><code>1. 处理文件中冲突的地方
+<p>当两个分支上对文件的修改可能会存在冲突，例如同时修改了同一个文件的同一行，这时就需要手动解决冲突，解决冲突步骤如下：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">1. 处理文件中冲突的地方
 2. 将解决完冲突的文件加入暂存区(add)
 3. 提交到仓库(commit)
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>冲突部分的内容处理如下所示：</p>
+<p>1、准备新的<code>feature1</code>分支，继续我们的新分支开发：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">$ git switch <span class="token punctuation">-</span>c feature1
+Switched to a new branch 'feature1'
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>2、修改<code>readme.txt</code>最后一行，改为：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">Creating a new branch is quick AND simple.
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>3、在<code>feature1</code>分支上提交：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">$ git add readme.txt
+
+$ git commit <span class="token punctuation">-</span>m "AND simple"
+<span class="token punctuation">[</span>feature1 14096d0<span class="token punctuation">]</span> AND simple
+ 1 file changed<span class="token punctuation">,</span> 1 insertion(+)<span class="token punctuation">,</span> 1 deletion(<span class="token punctuation">-</span>)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>4、切换到<code>master</code>分支：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">$ git switch master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Git还会自动提示我们当前<code>master</code>分支比远程的<code>master</code>分支要超前1个提交。</p>
+<p>5、在<code>master</code>分支上把<code>readme.txt</code>文件的最后一行改为：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">Creating a new branch is quick &amp; simple.
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>提交：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">$ git add readme.txt 
+$ git commit <span class="token punctuation">-</span>m "&amp; simple"
+<span class="token punctuation">[</span>master 5dc6824<span class="token punctuation">]</span> &amp; simple
+ 1 file changed<span class="token punctuation">,</span> 1 insertion(+)<span class="token punctuation">,</span> 1 deletion(<span class="token punctuation">-</span>)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>现在，<code>master</code>分支和<code>feature1</code>分支各自都分别有新的提交，变成了这样：</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://www.liaoxuefeng.com/files/attachments/919023000423040/0" alt="git-br-feature1"></p>
+<p>6、这种情况下，Git无法执行“快速合并”，只能试图把各自的修改合并起来，但这种合并就可能会有冲突，我们试试看：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">$ git merge feature1
+Auto<span class="token punctuation">-</span>merging readme.txt
+CONFLICT (content)<span class="token punctuation">:</span> Merge conflict in readme.txt
+Automatic merge failed; fix conflicts and then commit the result.
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>7、果然冲突了！Git告诉我们，<code>readme.txt</code>文件存在冲突，必须手动解决冲突后再提交。<code>git status</code>也可以告诉我们冲突的文件：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge <span class="token punctuation">-</span><span class="token punctuation">-</span>abort" to abort the merge)
+
+Unmerged paths<span class="token punctuation">:</span>
+  (use "git add &lt;file<span class="token punctuation">></span><span class="token punctuation">...</span>" to mark resolution)
+
+    both modified<span class="token punctuation">:</span>   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit <span class="token punctuation">-</span>a")
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>8、我们可以直接查看readme.txt的内容：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">Git is a distributed version control system.
+Git is free software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes of files.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Creating a new branch is quick &amp; simple.
+=======
+Creating a new branch is quick AND simple.
+<span class="token punctuation">></span><span class="token punctuation">></span><span class="token punctuation">></span><span class="token punctuation">></span><span class="token punctuation">></span><span class="token punctuation">></span><span class="token punctuation">></span> feature1
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>9、Git用<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>，<code>=======</code>，<code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>标记出不同分支的内容，我们修改如下后保存：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">Creating a new branch is quick and simple.
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>10、再提交：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">$ git add readme.txt 
+$ git commit <span class="token punctuation">-</span>m "conflict fixed"
+<span class="token punctuation">[</span>master cf810e4<span class="token punctuation">]</span> conflict fixed
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>现在，<code>master</code>分支和<code>feature1</code>分支变成了下图所示：</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://www.liaoxuefeng.com/files/attachments/919023031831104/0" alt="git-br-conflict-merged"></p>
+<p>11、用带参数的<code>git log</code>也可以看到分支的合并情况：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">$ git log <span class="token punctuation">-</span><span class="token punctuation">-</span>graph <span class="token punctuation">-</span><span class="token punctuation">-</span>pretty=oneline <span class="token punctuation">-</span><span class="token punctuation">-</span>abbrev<span class="token punctuation">-</span>commit
+*   cf810e4 (HEAD <span class="token punctuation">-</span><span class="token punctuation">></span> master) conflict fixed
+<span class="token punctuation">|</span>\  
+<span class="token punctuation">|</span> * 14096d0 (feature1) AND simple
+* <span class="token punctuation">|</span> 5dc6824 &amp; simple
+<span class="token punctuation">|</span>/  
+* b17d20e branch test
+* d46f35e (origin/master) remove test.txt
+* b84166e add test.txt
+* 519219b git tracks changes
+* e43a48b understand how stage works
+* 1094adb append GPL
+* e475afc add distributed
+* eaadf4e wrote a readme file
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>12、最后，删除<code>feature1</code>分支：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml">$ git branch <span class="token punctuation">-</span>d feature1
+Deleted branch feature1 (was 14096d0).
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>3.4.9、开发中分支使用原则与流程</strong></p>
 <p>几乎所有的版本控制系统都以某种形式支持分支。 使用分支意味着你可以把你的工作从开发主线上分离开来进行重大的Bug修改、开发新的功能，以免影响开发主线。</p>
 <p>在开发中，一般有如下分支使用原则与流程：</p>
-<pre><code>master （生产） 分支
+<pre class="line-numbers language-yaml"><code class="language-yaml">master （生产） 分支
 线上分支，主分支，中小规模项目作为线上运行的应用对应的分支；
 develop（开发）分支
 是从master创建的分支，一般作为开发部门的主要开发分支，如果没有其他并行开发不同期上线
-要求，都可以在此版本进行开发，阶段开发完成后，需要是合并到master分支,准备上线。
+要求，都可以在此版本进行开发，阶段开发完成后，需要是合并到master分支<span class="token punctuation">,</span>准备上线。
 feature/xxxx分支
 从develop创建的分支，一般是同期并行开发，但不同期上线时创建的分支，分支上的研发任务完
 成后合并到develop分支。
@@ -850,97 +968,97 @@ hotfix/xxxx分支，
 develop分支。
 还有一些其他分支，在此不再详述，例如test分支（用于代码测试）、pre分支（预上线分支）等
 等。
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>练习:分支操作</strong></p>
-<h2 id="4-、Git远程仓库"><a href="#4-、Git远程仓库" class="headerlink" title="4 、Git远程仓库"></a>4 、Git远程仓库</h2><h3 id="4-1、-常用的托管服务-远程仓库"><a href="#4-1、-常用的托管服务-远程仓库" class="headerlink" title="4.1、 常用的托管服务[远程仓库]"></a>4.1、 常用的托管服务[远程仓库]</h3><pre><code>###########################创建并切换到dev01分支，在dev01分支提交
-# [master]创建分支dev
+<h2 id="4-、Git远程仓库"><a href="#4-、Git远程仓库" class="headerlink" title="4 、Git远程仓库"></a>4 、Git远程仓库</h2><h3 id="4-1、-常用的托管服务-远程仓库"><a href="#4-1、-常用的托管服务-远程仓库" class="headerlink" title="4.1、 常用的托管服务[远程仓库]"></a>4.1、 常用的托管服务[远程仓库]</h3><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true">###########################创建并切换到dev01分支，在dev01分支提交</span>
+<span class="token comment" spellcheck="true"># [master]创建分支dev</span>
 git branch dev
-# [master]切换到dev
+<span class="token comment" spellcheck="true"># [master]切换到dev</span>
 git checkout dev
-# [dev01]创建文件file02.txt
+<span class="token comment" spellcheck="true"># [dev01]创建文件file02.txt</span>
 略
-# [dev01]将修改加入暂存区并提交到仓库,提交记录内容为：add file02 on dev
+<span class="token comment" spellcheck="true"># [dev01]将修改加入暂存区并提交到仓库,提交记录内容为：add file02 on dev</span>
 git add.
-git commit -m 'add file02 on dev'
-# [dev01]以精简的方式显示提交记录
-git-log
-###########################切换到master分支，将dev01合并到master分支
-# [dev01]切换到master分支
+git commit <span class="token punctuation">-</span>m 'add file02 on dev'
+<span class="token comment" spellcheck="true"># [dev01]以精简的方式显示提交记录</span>
+git<span class="token punctuation">-</span>log
+<span class="token comment" spellcheck="true">###########################切换到master分支，将dev01合并到master分支</span>
+<span class="token comment" spellcheck="true"># [dev01]切换到master分支</span>
 git checkout master
-# [master]合并dev01到master分支
+<span class="token comment" spellcheck="true"># [master]合并dev01到master分支</span>
 git merge dev
-# [master]以精简的方式显示提交记录
-git-log
-# [master]查看文件变化(目录下也出现了file02.txt)
+<span class="token comment" spellcheck="true"># [master]以精简的方式显示提交记录</span>
+git<span class="token punctuation">-</span>log
+<span class="token comment" spellcheck="true"># [master]查看文件变化(目录下也出现了file02.txt)</span>
 略
-##########################删除dev01分支
-# [master]删除dev01分支
-git branch -d dev
-# [master]以精简的方式显示提交记录
-git-log
-</code></pre>
+<span class="token comment" spellcheck="true">##########################删除dev01分支</span>
+<span class="token comment" spellcheck="true"># [master]删除dev01分支</span>
+git branch <span class="token punctuation">-</span>d dev
+<span class="token comment" spellcheck="true"># [master]以精简的方式显示提交记录</span>
+git<span class="token punctuation">-</span>log
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="4-2、-注册码云"><a href="#4-2、-注册码云" class="headerlink" title="4.2、 注册码云"></a>4.2、 注册码云</h3><p>要想使用码云的相关服务，需要注册账号（地址： <a target="_blank" rel="noopener" href="https://gitee.com/signup">https://gitee.com/signup</a> ）</p>
-<h3 id="4-3、-创建远程仓库"><a href="#4-3、-创建远程仓库" class="headerlink" title="4.3、 创建远程仓库"></a>4.3、 创建远程仓库</h3><pre><code>前面我们已经知道了Git中存在两种类型的仓库，即本地仓库和远程仓库。那么我们如何搭建Git远程仓库
+<h3 id="4-3、-创建远程仓库"><a href="#4-3、-创建远程仓库" class="headerlink" title="4.3、 创建远程仓库"></a>4.3、 创建远程仓库</h3><pre class="line-numbers language-yaml"><code class="language-yaml">前面我们已经知道了Git中存在两种类型的仓库，即本地仓库和远程仓库。那么我们如何搭建Git远程仓库
 呢？我们可以借助互联网上提供的一些代码托管服务来实现，其中比较常用的有GitHub、码云、GitLab等。
-gitHub（ 地址：https://github.com/ ）是一个面向开源及私有软件项目的托管平台，因为只支持
+gitHub（ 地址：https<span class="token punctuation">:</span>//github.com/ ）是一个面向开源及私有软件项目的托管平台，因为只支持
 Git 作为唯一的版本库格式进行托管，故名gitHub
-码云（地址： https://gitee.com/ ）是国内的一个代码托管平台，由于服务器在国内，所以相比于
+码云（地址： https<span class="token punctuation">:</span>//gitee.com/ ）是国内的一个代码托管平台，由于服务器在国内，所以相比于
 GitHub，码云速度会更快
-GitLab （地址： https://about.gitlab.com/ ）是一个用于仓库管理系统的开源项目，使用Git作
-为代码管理工具，并在此基础上搭建起来的web服务,一般用于在企业、学校等内部网络搭建git私服。
-</code></pre>
+GitLab （地址： https<span class="token punctuation">:</span>//about.gitlab.com/ ）是一个用于仓库管理系统的开源项目，使用Git作
+为代码管理工具，并在此基础上搭建起来的web服务<span class="token punctuation">,</span>一般用于在企业、学校等内部网络搭建git私服。
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>仓库创建完成后可以看到仓库地址，如下图所示:</p>
 <h3 id="4-4、配置SSH公钥"><a href="#4-4、配置SSH公钥" class="headerlink" title="4.4、配置SSH公钥"></a>4.4、配置SSH公钥</h3><p>生成SSH公钥</p>
-<pre><code>ssh-keygen -t rsa
+<pre class="line-numbers language-yaml"><code class="language-yaml">ssh<span class="token punctuation">-</span>keygen <span class="token punctuation">-</span>t rsa
 不断回车
 如果公钥已经存在，则自动覆盖
 Gitee设置账户共公钥
 获取公钥
 cat ~/.ssh/id_rsa.pub
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>验证是否配置成功</p>
-<pre><code>ssh -T git@gitee.com
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">ssh <span class="token punctuation">-</span>T git@gitee.com
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="4-5、操作远程仓库"><a href="#4-5、操作远程仓库" class="headerlink" title="4.5、操作远程仓库"></a>4.5、操作远程仓库</h3><p>4.5.1、添加远程仓库</p>
 <p>此操作是先初始化本地库，然后与已创建的远程库进行对接 。</p>
-<pre><code>命令： git remote add &lt;远端名称&gt; &lt;仓库路径&gt;
+<pre class="line-numbers language-yaml"><code class="language-yaml">命令： git remote add &lt;远端名称<span class="token punctuation">></span> &lt;仓库路径<span class="token punctuation">></span>
 远端名称，默认是origin，取决于远端服务器设置
 仓库路径，从远端服务器获取此URL
-例如: git remote add origin git@gitee.com:czbk_zhang_meng/git_test.git
-</code></pre>
+<span class="token key atrule">例如</span><span class="token punctuation">:</span> git remote add origin git@gitee.com<span class="token punctuation">:</span>czbk_zhang_meng/git_test.git
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>4.5.2、查看远程仓库</p>
-<pre><code>命令：git remote
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">命令：git remote
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>4.5.3、推送到远程仓库</p>
-<pre><code>命令：git push [-f] [--set-upstream] [远端名称 [本地分支名][:远端分支名] ]
+<pre class="line-numbers language-yaml"><code class="language-yaml">命令：git push <span class="token punctuation">[</span><span class="token punctuation">-</span>f<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token punctuation">-</span><span class="token punctuation">-</span>set<span class="token punctuation">-</span>upstream<span class="token punctuation">]</span> <span class="token punctuation">[</span>远端名称 <span class="token punctuation">[</span>本地分支名<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">:</span>远端分支名<span class="token punctuation">]</span> <span class="token punctuation">]</span>
 如果远程分支名和本地分支名称相同，则可以只写本地分支
 git push origin master
--f 表示强制覆盖
---set-upstream 推送到远端的同时并且建立起和远端分支的关联关系。
-git push --set-upstream origin master
+<span class="token punctuation">-</span>f 表示强制覆盖
+<span class="token punctuation">-</span><span class="token punctuation">-</span>set<span class="token punctuation">-</span>upstream 推送到远端的同时并且建立起和远端分支的关联关系。
+git push <span class="token punctuation">-</span><span class="token punctuation">-</span>set<span class="token punctuation">-</span>upstream origin master
 如果 当前分支已经和远端分支关联 ，则可以省略分支名和远端名。
 git push 将master分支推送到已关联的远端分支。
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>查询远程仓库</p>
 <p>4.5.4、 本地分支与远程分支的关联关系</p>
-<pre><code>查看关联关系我们可以使用 git branch -vv命令
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">查看关联关系我们可以使用 git branch <span class="token punctuation">-</span>vv命令
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>4.5.5、从远程仓库克隆</p>
 <p>如果已经有一个远端仓库，我们可以直接clone到本地。</p>
-<pre><code>命令: git clone &lt;仓库路径&gt; [本地目录]
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">命令</span><span class="token punctuation">:</span> git clone &lt;仓库路径<span class="token punctuation">></span> <span class="token punctuation">[</span>本地目录<span class="token punctuation">]</span>
 本地目录可以省略，会自动生成一个目录
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>4.5.6、从远程仓库中抓取和拉取</p>
 <p>远程分支和本地的分支一样，我们可以进行merge操作，只是需要先把远端仓库里的更新都下载到本<br>地，再进行操作。</p>
-<pre><code>抓取 命令：git fetch [remote name] [branch name]
+<pre class="line-numbers language-yaml"><code class="language-yaml">抓取 命令：git fetch <span class="token punctuation">[</span>remote name<span class="token punctuation">]</span> <span class="token punctuation">[</span>branch name<span class="token punctuation">]</span>
 抓取指令就是将仓库里的更新都抓取到本地，不会进行合并
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>如果不指定远端名称和分支名，则抓取所有分支。</p>
-<pre><code>拉取 命令：git pull [remote name] [branch name]
+<pre class="line-numbers language-yaml"><code class="language-yaml">拉取 命令：git pull <span class="token punctuation">[</span>remote name<span class="token punctuation">]</span> <span class="token punctuation">[</span>branch name<span class="token punctuation">]</span>
 拉取指令就是将远端仓库的修改拉到本地并自动进行合并，等同于fetch+merge
 如果不指定远端名称和分支名，则抓取所有并更新当前分支。
 1. 在test01这个本地仓库进行一次提交并推送到远程仓库
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <ol start="2">
 <li>在另一个仓库将远程提交的代码拉取到本地仓库</li>
 </ol>
@@ -950,37 +1068,37 @@ git push 将master分支推送到已关联的远端分支。
 <p>在B用户拉取代码时，因为A、B用户同一段时间修改了同一个文件的相同位置代码，故会发生合并冲突。</p>
 <p>远程分支也是分支，所以合并时冲突的解决方式也和解决本地分支冲突相同相同 ，在此不再赘述，需要学员自己练习。</p>
 <p><strong>练习:远程仓库操作</strong></p>
-<h2 id="5-、在Idea中使用Git"><a href="#5-、在Idea中使用Git" class="headerlink" title="5 、在Idea中使用Git"></a>5 、在Idea中使用Git</h2><h3 id="5-1、在Idea中配置Git"><a href="#5-1、在Idea中配置Git" class="headerlink" title="5.1、在Idea中配置Git"></a>5.1、在Idea中配置Git</h3><pre><code>##########################1-将本地仓库推送到远程仓库
-# 完成4.1、4.2、4.3、4.4的操作
+<h2 id="5-、在Idea中使用Git"><a href="#5-、在Idea中使用Git" class="headerlink" title="5 、在Idea中使用Git"></a>5 、在Idea中使用Git</h2><h3 id="5-1、在Idea中配置Git"><a href="#5-1、在Idea中配置Git" class="headerlink" title="5.1、在Idea中配置Git"></a>5.1、在Idea中配置Git</h3><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true">##########################1-将本地仓库推送到远程仓库</span>
+<span class="token comment" spellcheck="true"># 完成4.1、4.2、4.3、4.4的操作</span>
 略
-# [git_test01]添加远程仓库
+<span class="token comment" spellcheck="true"># [git_test01]添加远程仓库</span>
 git remote add origin  git@gitee.com/**/**.git
-# [git_test01]将master分支推送到远程仓库,并与远程仓库的master分支绑定关联关系
-git push --set-upstream origin master
-</code></pre>
-<pre><code>###########################2-将远程仓库克隆到本地
-# 将远程仓库克隆到本地git_test02目录下
+<span class="token comment" spellcheck="true"># [git_test01]将master分支推送到远程仓库,并与远程仓库的master分支绑定关联关系</span>
+git push <span class="token punctuation">-</span><span class="token punctuation">-</span>set<span class="token punctuation">-</span>upstream origin master
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true">###########################2-将远程仓库克隆到本地</span>
+<span class="token comment" spellcheck="true"># 将远程仓库克隆到本地git_test02目录下</span>
 git clone git@gitee.com/**/**.git git_test
-# [git_test02]以精简的方式显示提交记录
-git-log
-</code></pre>
-<pre><code>###########################3-将本地修改推送到远程仓库
-# [git_test01]创建文件file03.txt
+<span class="token comment" spellcheck="true"># [git_test02]以精简的方式显示提交记录</span>
+git<span class="token punctuation">-</span>log
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true">###########################3-将本地修改推送到远程仓库</span>
+<span class="token comment" spellcheck="true"># [git_test01]创建文件file03.txt</span>
 略
-# [git_test01]将修改加入暂存区并提交到仓库,提交记录内容为：add file
+<span class="token comment" spellcheck="true"># [git_test01]将修改加入暂存区并提交到仓库,提交记录内容为：add file</span>
 git add.
-git commit -m 'add file03'
-# [git_test01]将master分支的修改推送到远程仓库
+git commit <span class="token punctuation">-</span>m 'add file03'
+<span class="token comment" spellcheck="true"># [git_test01]将master分支的修改推送到远程仓库</span>
 git push origin master
-</code></pre>
-<pre><code>###########################4-将远程仓库的修改更新到本地
-# [git_test02]将远程仓库修改再拉取到本地
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true">###########################4-将远程仓库的修改更新到本地</span>
+<span class="token comment" spellcheck="true"># [git_test02]将远程仓库修改再拉取到本地</span>
 git pull
-# 以精简的方式显示提交记录
-git-log
-# 查看文件变化(目录下也出现了file03.txt)
+<span class="token comment" spellcheck="true"># 以精简的方式显示提交记录</span>
+git<span class="token punctuation">-</span>log
+<span class="token comment" spellcheck="true"># 查看文件变化(目录下也出现了file03.txt)</span>
 略
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>安装好IntelliJ IDEA后，如果Git安装在默认路径下，那么idea会自动找到git的位置，如果更改了Git的安<br>装位置则需要手动配置下Git的路径。选择File→Settings打开设置窗口，找到Version Control下的git选<br>项：</p>
 <p>点击Test按钮,现在执行成功，配置完成</p>
 <h3 id="5-2、在Idea中操作Git"><a href="#5-2、在Idea中操作Git" class="headerlink" title="5.2、在Idea中操作Git"></a>5.2、在Idea中操作Git</h3><p>场景：本地已经有一个项目，但是并不是git项目，我们需要将这个放到码云的仓库里，和其他开发人员<br>继续一起协作开发。</p>
@@ -1036,10 +1154,10 @@ git-log
 </li>
 </ol>
 <p>这里以创建.ignore文件为例：</p>
-<pre><code>在git目录下打开gitbash
-</code></pre>
+<pre class="line-numbers language-yaml"><code class="language-yaml">在git目录下打开gitbash
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>执行指令touch .gitignore</p>
-<h2 id="附：IDEA集成GitBash作为Terminal"><a href="#附：IDEA集成GitBash作为Terminal" class="headerlink" title="附：IDEA集成GitBash作为Terminal"></a>附：IDEA集成GitBash作为Terminal</h2><h1 id=""><a href="#" class="headerlink" title=""></a></h1>
+<h2 id="附：IDEA集成GitBash作为Terminal"><a href="#附：IDEA集成GitBash作为Terminal" class="headerlink" title="附：IDEA集成GitBash作为Terminal"></a>附：IDEA集成GitBash作为Terminal</h2>
                 
             </div>
             <hr/>
@@ -1586,7 +1704,7 @@ git-log
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">16.6k</span>
+                        class="white-color">17.3k</span>
             
             
             
@@ -2162,12 +2280,12 @@ $(function () {
         }
 
     </script>
-<script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true,"react":{"opacity":0.7}},"dialog":{"enable":true,"hitokoto":false}});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true,"react":{"opacity":0.7}},"dialog":{"enable":true,"hitokoto":false}});</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>
